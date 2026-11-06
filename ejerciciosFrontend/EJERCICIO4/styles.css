@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor flexible para la galería */
+.gallery {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las imágenes pasen a la siguiente línea si no caben */
+  gap: 15px;      
+  justify-content: center; /* Centra las imágenes en cada fila */
+}
+
+
+.gallery img {
+  flex: 1 1 250px; 
+  max-width: 100%;  /* Evita que se salgan del contenedor en pantallas muy pequeñas */
+  height: auto;     /* Mantiene la relación de aspecto original */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

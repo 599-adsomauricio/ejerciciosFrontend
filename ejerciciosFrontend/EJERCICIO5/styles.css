@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout vertical de la página completa */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+header, footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  font-weight: bold;
+}
+
+ 
+main {
+  display: flex;
+  flex: 1;
+}
+main > * {
+  padding: 20px;
+}
+
+/* Orden visual y proporciones de las columnas */
+nav {
+  flex: 1; 
+  background-color: #e0e0e0;
+  order: 1;
+}
+
+article {
+  flex: 2; 
+  background-color: #d0d0d0;
+  order: 2; 
+  text-align: left;
+}
+
+aside {
+  flex: 1; 
+  background-color: #cccccc;
+  order: 3; 
+}
+
