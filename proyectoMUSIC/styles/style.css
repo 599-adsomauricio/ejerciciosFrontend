@@ -1,171 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;700&display=swap');
+
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	}
 
 body {
-  font-family: Arial, sans-serif;
-  color: #333;
+	font-family: 'Karla', Arial, sans-serif;
+	color: #333;
+}
+html, body{
+	overflow-x: hidden;
+}
+
+img{
+	display: block;
 }
 
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 450px;                 
-  background-image: url("../assets/images/angel.jpg");
-  background-size: cover;        
-  background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 3vw;
+	padding: 0 3vw 0 0;
+	width: 100%; 
+	aspect-ratio: 16/9;    
+	overflow: hidden;           
+	background-image: url("../assets/images/angel.jpg");
+	background-size: 108% auto;        
+	background-position: 95% 0 ;
+}
+
+header h1 {
+	font-family: 'Karla', sans-serif;
+	font-size: 13vw;
+	letter-spacing: 0;
+	line-height: 1;
+	white-space: nowrap;	
 }
 
 #div1 h1, #div3 h1 {
-  color: rgba(255, 255, 255, 0.4); 
-  font-size: 90px;
-  font-weight: 300;
+	color: rgba(255, 255, 255, 0.4); 
+	font-weight: 300;
 }
 
 #div2 h1 {
-  color: white;
-  font-size: 90px;
-  font-weight: 400;
+	color: white;
+	font-weight: 400;
 }
 
-
 .music-section {
-  display: flex;
-  justify-content: center;
-  padding: 100px 20px;
+	display: flex;
+	justify-content: center;
+	padding: 14.5vw 0 8.4vw 1.8vw;
+}
+
+.music-section.reverse{
+	justify-content: flex-start;
+	padding: 14.4vw 0 8.4vw 13.8vw;
 }
 
 .music-section article {
-  display: flex;                  
-  justify-content: space-between;
-  align-items: center;
-  width: 1000px;
-  max-width: 1000px;
-  gap: 50px;
+	display: flex; 
+	justify-content: space-between;
+	align-items: center;
+	width: 73.6vw;
 }
 
 .reverse article {
-  flex-direction: row-reverse;
+	flex-direction: row-reverse;
+	width: 79.5vw;
 }
 
 .content-container {
-  width: 450px;
-  max-width: 100%;
+  	width: 36vw;
+}
+
+.reverse .content-container {
+ 	width: 38.5vw;
 }
 
 .content-container h2 {
-  font-size: 32px;
-  text-transform: uppercase;
-}
-
-.item1 h2 {
-  color: rgb(255, 66, 100);
+	font-family: 'Karla', Arial, sans-serif;
+ 	font-size: 4.5vw;
+	line-height: 5.4vw;
+	font-weight: 700;
+	text-transform: uppercase;
+	color:#333;
+	white-space: nowrap;
 }
 
 .content-container p {
-  margin-top: 15px;
-  font-size: 14px;
-  line-height: 1.8;
+	margin-top: 0.8vw;
+	max-width: 34.3vw;
+	font-size: 1.15vw;
+	line-height: 2.2vw;
+	letter-spacing: 0.03vw;
 }
 
 .music-section img {
-  width: 320px;
-  height: 420px;
-  object-fit: cover;                      
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3); 
+	width: 30vw;
+	height: 39.1vw;
+	flex: 0 0 auto;
+	object-fit: cover;
+	box-shadow: 0 1vw 3vw rgba(0,0,0,0.2); 
 }
 
-
 nav {
-  margin-top: 25px;
+	margin-top: 2.2vw;
+	margin-left: -0.7vw;
 }
 
 nav a {
-  display: inline-block;
-  text-decoration: none;
-  padding: 14px 40px;
-  color: white;
-  background-color: rgb(255, 74, 101);
-  border: 2px solid rgb(255, 74, 101);
-  border-radius: 50px;           
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 13.2vw;
+	height: 3.7vw;
+	font-family: 'Karla', Arial, sans-serif;
+	font-size: 1.05vw;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	text-decoration: none;
+	color: white;
+	background-color: rgb(255, 74, 101);
+	border: 2px solid rgb(255, 74, 101);
+	border-radius: 50px;          
 }
 
 nav a:hover {
-  background-color: white;
-  color: rgb(255, 74, 101);
+	background-color: white;
+	color: rgb(255, 74, 101);
 }
-
-.banner {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 450px;
-  padding: 0 10%;
-  color: white;
-  background: linear-gradient(rgba(255, 20, 120, 0.5),
-  							 rgba(90, 20, 100, 0.7)),
-              url("../assets/images/raptis.png");
-  background-size: cover;
-  background-position: center;
+.content-container .item1 h2 {
+	display: inline-block;
+	background: linear-gradient(to right, #ff4a5c, #ff0a85);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
 }
-
-.banner h2 {
-  color: white;
-  font-size: 32px;
+.ultima-img{
+    display: flex;
+	align-items: center;
+	width: 100%;
+	aspect-ratio: 12 / 5;              
+	background:url("../assets/images/raptis.png");
+	background-size: cover;
+	background-position: center;
 }
-.banner .content-container{
-	width: 350px;
+.ultima-img article{
+	padding-left: 55.7vw;
+	padding-top: 4.3vw;
 }
-.banner p{
+.ultima-img .content-container{
+	width: 36vw;
 	color: white;
 }
+
+.ultima-img .content-container h2 {
+	color: white;
+	font-size: 4.3vw;
+	line-height: 4.85vw;
+	letter-spacing: 0;
+}
+
+.ultima-img .content-container p {
+	color: white;
+	margin-top: 1.2vw;
+	font-size: 1.4vw;
+	letter-spacing: 0.01vw;
+	max-width: 35vw;
+}
+.ultima-img nav{
+	margin-top: 2.1vw;
+}
+
 .gradient-footer {
-  background: linear-gradient(to right, #ff5768, #ff225a);
-  color: white;
-  padding: 80px 20px 40px;
+	background: linear-gradient(135deg, #ff4b5c 55%, #ff2a5d 73%);
+	color: white;
+	padding: 4.7vw 0 1.6vw;
 }
 
 .footer-container {
-  width: 100%;
-  max-width: 1000px; 
-  margin: 0 auto;
+	width: 66.5vw;
+	margin: 0 auto;
 }
 
 .footer-links-section {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 60px;
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 8vw;
+	margin-bottom: 2.2vw;
 }
 
-.footer-col h4 {
-  margin-bottom: 25px;
-  font-size: 14px;
+.footer-col {
+ 	width: 15.4vw;
 }
 
-.footer-col ul {
-  list-style: none; 
+.gradient-footer .footer-col h4 {
+ 	font-size: 0.72vw;
+	font-weight: 400; 
+   	margin-bottom: 3.1vw;
 }
 
-.footer-col li {
-  margin-bottom: 15px;
-  font-size: 12px;
+.gradient-footer .footer-col ul {
+  	list-style: none; 
 }
 
-.footer-col a {
-  color: white;
-  text-decoration: none;
+.gradient-footer .footer-col li {
+	font-size: 0.69vw;
+	line-height: 0.7vw;
+	margin-bottom: 1.3vw;
+    white-space: nowrap;
 }
-.footer-col a:hover {
-  text-decoration: underline;
+
+.gradient-footer .footer-col a {
+	font-size: 0.69vw;
+	color: white;
+	text-decoration: none;
+}
+.gradient-footer .footer-col a:hover {
+  	text-decoration: underline;
 }
 
 .footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-  font-size: 11px;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1.7vw;
+	border-top: 0.1vw solid rgba(255, 255, 255, 0.3);
+	font-size: 0.55vw;
+	white-space: nowrap;
 }
